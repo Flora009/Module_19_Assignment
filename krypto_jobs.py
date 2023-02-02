@@ -100,7 +100,7 @@ candidate_database = {
     ],
     "Ash": [
         "Ash",
-        "0x2422858F9C4480c2724A309D58Ffd7Ac8bF65396",
+        "0x07ef711b623f0C01a8919C8710529f1a575F4bC7",
         "5.0",
         0.33,
         "Images/ash.jpeg",
@@ -226,11 +226,9 @@ st.sidebar.markdown("## Total Wage in Ether")
 # (`candidate_database[person][3]`) and then multiply this hourly rate by
 # the value of the `hours` variable. Save this calculation’s output as a
 # variable named `wage`.
-wage = candidate_database[person][3]*hours
-
 # * Write the `wage` variable to the Streamlit sidebar by
 # using `st.sidebar.write`.
-st.sidebar.write(wage)
+
 
 # 2. Now that the application can calculate a candidate’s wage, write the code
 # that will allow a customer (you, in this case) to send an Ethereum blockchain
@@ -269,11 +267,12 @@ st.sidebar.write(wage)
 # Calculate total `wage` for the candidate by multiplying the candidate’s hourly
 # rate from the candidate database (`candidate_database[person][3]`) by the
 # value of the `hours` variable
-# YOUR CODE HERE
+wage = candidate_database[person][3]*hours
+
 
 # @TODO
 # Write the `wage` calculation to the Streamlit sidebar
-# YOUR CODE HERE
+st.sidebar.write(wage)
 
 ##########################################
 # Step 2 - Part 2:
